@@ -67,6 +67,19 @@ http://127.0.0.1:8000/dashboard/
 
 ---
 
+## Dashboard Preview
+
+### Login Page
+![Login](images/login.png)
+
+### Admin Panel
+![Admin](images/admin.png)
+
+### Dashboard
+![Dashboard](images/dashboard.png)
+
+---
+
 ## Project Structure
 
 ```text
@@ -75,6 +88,7 @@ coal_carbon_app/
 ├── coal_carbon/
 ├── mines/
 ├── templates/
+├── images/
 ├── db.sqlite3
 ├── manage.py
 ├── requirements.txt
@@ -89,10 +103,3 @@ The primary objective of this project is to support environmental sustainability
 
 ---
 
-## Future Enhancements
-
-- Real-time emission monitoring
-- AI-based prediction and analytics
-- Export reports in PDF/Excel format
-- Cloud database integration
-- User authentication and role management
