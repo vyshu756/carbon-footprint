@@ -1,40 +1,75 @@
-Coal Carbon Footprint Dashboard
+# Coal Carbon Footprint Dashboard
 
-A Django-based web application developed to monitor, calculate, and visualize carbon dioxide (CO₂) emissions generated from coal mining operations. The system enables tracking of emissions from various mining activities such as diesel consumption, electricity usage, explosives, and transportation through an interactive analytical dashboard.
+A Django-based web application developed to monitor, calculate, and visualize carbon dioxide (CO₂) emissions generated from coal mining operations.
 
-The application automatically calculates CO₂ emissions using predefined emission factors and presents the results through graphical visualizations and emission analytics. It also provides an admin management system for maintaining operational and environmental data efficiently.
+The system enables tracking of emissions from activities such as:
+- Diesel consumption
+- Electricity usage
+- Explosives
+- Transportation
 
-Features
-Mining activity data management
-Automated CO₂ emission calculation
-Interactive dashboard with charts and analytics
-Emission source tracking and comparison
-Admin panel for data management
-Responsive and user-friendly interface
-Technology Stack
-Python
-Django Framework
-SQLite Database
-Matplotlib
-HTML/CSS
+The application automatically calculates CO₂ emissions using predefined emission factors and presents the results through graphical visualizations and analytical dashboards.
 
+---
 
-Installation & Setup
-# 1. Activate virtual environment
+## Features
+
+- Mining activity data management
+- Automated CO₂ emission calculation
+- Interactive dashboard with charts and analytics
+- Emission source tracking and comparison
+- Admin panel for data management
+- Responsive and user-friendly interface
+
+---
+
+## Technology Stack
+
+- Python
+- Django
+- SQLite
+- Matplotlib
+- HTML/CSS
+
+---
+
+## Installation & Setup
+
+### 1. Activate virtual environment
+
+```bash
 venv\Scripts\activate
+```
 
-# 2. Install dependencies
+### 2. Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-# 3. Apply database migrations
+### 3. Apply database migrations
+
+```bash
 python manage.py migrate
+```
 
-# 4. Run the development server
+### 4. Run the development server
+
+```bash
 python manage.py runserver
+```
 
-# 5. Open in browser
+### 5. Open in browser
+
+```text
 http://127.0.0.1:8000/dashboard/
-Project Structure
+```
+
+---
+
+## Project Structure
+
+```text
 coal_carbon_app/
 │
 ├── coal_carbon/
@@ -44,8 +79,20 @@ coal_carbon_app/
 ├── manage.py
 ├── requirements.txt
 └── README.md
+```
 
+---
 
-Purpose of the Project
+## Purpose of the Project
 
 The primary objective of this project is to support environmental sustainability in mining operations by providing a platform for monitoring carbon emissions, analyzing environmental impact, and generating visual analytical reports.
+
+---
+
+## Future Enhancements
+
+- Real-time emission monitoring
+- AI-based prediction and analytics
+- Export reports in PDF/Excel format
+- Cloud database integration
+- User authentication and role management
