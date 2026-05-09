@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbon Footprint Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f9f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .charts {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 420px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 320px;
+        }
+        .summary {
+            margin-top: 30px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Coal Mine Carbon Footprint</h1>
+
+<div class="charts">
+    <div class="box">
+        <h3>Emissions by Source</h3>
+        <img src="data:image/png;base64,{{ bar_chart }}">
+    </div>
+
+    <div class="box">
+        <h3>Carbon Emission Share (%)</h3>
+        <img src="data:image/png;base64,{{ pie_chart }}">
+    </div>
+</div>
+
+<div class="summary">
+    <h3>Total CO₂ Emissions: {{ total_emission }} kg</h3>
+
+    <h4>Carbon Percentage Contribution:</h4>
+    <ul>
+        {% for source, percent in percentages.items %}
+            <li><strong>{{ source }}:</strong> {{ percent }}%</li>
+        {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>
+
+
+
