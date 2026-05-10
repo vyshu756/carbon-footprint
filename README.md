@@ -71,15 +71,15 @@ http://127.0.0.1:8000/dashboard/
 
 ### Login Page
 
-<img src="./images/login.png" width="700">
+<img src="images/login.png" width="700"/>
 
 ### Admin Panel
 
-<img src="./images/admin.png" width="700">
+<img src="images/admin.png" width="700"/>
 
 ### Dashboard
 
-<img src="./images/dashboard.png" width="700">
+<img src="images/dashboard.png" width="700"/>
 
 ## Project Structure
 
